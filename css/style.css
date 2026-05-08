@@ -1,3 +1,26 @@
 *{
     margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+    
 }
+:root{
+--text:#fffff;
+--primary:#ffff;
+--secondary:#000;
+--bg:#0f0f0f;
+--card:#1a1a1a;
+line-height: 1.6;
+}
+body{
+    font-family:'Monserrat',sans-serif;
+    color: var(--text);
+  
+    
+}
+h1,h2,h3{
+    font-family: 'Sora'sans-serif;
+}
+
