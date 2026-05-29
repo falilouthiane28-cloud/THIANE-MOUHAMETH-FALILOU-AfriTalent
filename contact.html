@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriTalent Contact</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,7 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-itiem ms-3">
-                            <a href="index.html" class="btn btn-outline-warning">Rejoindre AfriTalent</a>
+                            <a href="index.html" class="btn btn-light">Rejoindre AfriTalent</a>
                         </li>
                     </ul>
                 </div>
@@ -45,49 +46,147 @@
         </nav>
  </header>
   <main> 
-    <section class="formulaire">
-        <h2>Contactez-nous</h2>
+    <section class="contact">
+        <div class="container form-container"> 
+            <div class="row g-4 align-items-start"> 
+                 <div class="col-lg-6"> 
+                     
+        <h2 class="fw-bold info-c mb-2">Contactez-nous</h2>
         <div>
-            <form >
-                <div>
-                    <label >Nom</label><br>
-                    <input type="text"><br>
-                </div>
-                <div>
-                    <label >Prénom</label><br>
-                    <input type="text"><br>
-                </div>
-                <div>
-                    <label >Email</label><br>
-                    <input type="email"><br>
-                </div>
-                <div>
-                    <label >Sujet</label><br>
-                    <select >
+            <form>
+                <div class="mb-2"> 
+                
+                    <label for="name" class="form-label" >Nom </label>
+                    <input type="text" id="nom" class="form-control"  placeholder="Votre nom" maxlength="30">
+                   
+                   </div>
+                 <div class="mb-2"> 
+                    <label for="prenom" class="form-label " >Prénom  </label>
+                    <input type="text" id="Prénom" class="form-control " placeholder="Votre Prénom" maxlength="30">
+                   
+                    </div>
+                 <div class="mb-2"> 
+                    <label for="email" class="form-label">Email </label>
+                    <input type="email"  id="Email" class="form-control " placeholder="Votre email" maxlength="50">  
+                    
+                   </div>
+                <div class="mb-2">  
+                    <label for="sujet" class="form-label ">Sujet</label>
+                    <select id="sujet" class="form-select "  >
                         <option value="">Chosir</option>
                         <option >Support</option>
                         <option >Freelance</option>
                         <option >Entreprise</option>
-                    </select><br>
-                </div>
-                <div>
-                    <label >Message</label><br>
-                    <textarea  id="message"></textarea>
-                </div>
-                <button>Envoyer</button>
+                    </select>
+                   
+                    </div>
+                <div class="mb-2"> 
+                
+                    <label for="message" class="form-label " >Message</label>
+                    <textarea id="messsage"  rows="6" class="form-control " placeholder="Votre message" maxlength="70"></textarea>
+                    
+                 </div>
+
+                <button type="submit" class="btn btn-warning w-100 text-dark fw-bold">Envoyer</button>
+               
             </form>
-            <div>
-                <h3>informations</h3>
-                <p>Email : contact@afritalent.com</p>
-                <p>Tél : +221 78 427 72 29</p>
-                <p> Adresse : Dakar,Sénégal</p>
-                <iframe src="https://www.google.com/maps?q=Dakar&output=embed" width="100%" height="250">
+            <br>
+            </div>
+             </div>
+             
+
+            <div class="col-lg-6 c">
+                <div class="contact-info"> 
+                <h3 class="mb-3 info-i">INFORMATIONS</h3>
+                <p>une question ? Contactez notre equipe</p>
+                <div class="info-box"> 
+               <i class="bi bi-geo-alt-fill"></i>
+               <div>
+                <h4>Adresse</h4>
+                <span>Dakar, Sénégal</span>
+               </div>
+                </div>
+                <div class="info-box">
+                    <i class="bi bi-telephone-fill"></i>
+               
+                <div>
+                    <h4>Téléphone</h4>
+                    <span>+221 78 427 72 29</span>
+                </div>
+                 </div>
+                 <div class="info-box">
+                    <i class=" bi bi-envelope-fill"></i>
+                 
+                 <div >
+                    <h4>Email</h4>
+                    <span>contact@afritalent.sn</span>
+                 </div>
+                  </div>
+                   </div>
+                    </div>
+             </section>
+                <div class="map"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.5707015465755!2d-17.455408325245322!3d14.680287585815519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173124127601f%3A0x538df46d4ba689e8!2sM%C3%A9dina%20rue%2010!5e0!3m2!1sen!2ssn!4v1779466443343!5m2!1sen!2ssn" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
                 </iframe>
-            </div>
-        </div>
-    </section>
 
+                
+             </div>
+    </section>
+</main>
+                            <footer class="bg-dark text-light pt-5 pb-4">
+                                <div class="footer-container">
+                                    <div class="row *"> 
+                                        <div class="col-md-3 " >  
+                                            <div class="d-flex align-items-center gap-3 mb-4">  
+                                            <a href="index.html" class="d-flex align-items-center gap-2">
+                                                <img src="image/Tech_business_purple_logo-removebg-preview.png" alt="" width="150px" height="auto">
+                                            </a>
+                                            </div>
+                                   
+                                    <p>
+                                        Plateforme qui connecte les freelance et les entreprises du monde entier
+                                    </p>
+                                    <div class="d-flex align-items-center gap-3 mt-4">
+                                        <a href="" class="text-light"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+                                        <a href="" class="text-light" ><i class="fa-brands fa-square-instagram fa-1x"></i></a>
+                                        <a href="" class="text-light"><i class="fa-brands fa-facebook fa-1x"></i></a>
+                                        <a href="" class="text-light"> <i class="fa-brands fa-x-twitter fa-1x"></i></a>
+
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3 ">
+                                        <h5 class="text-warning">Liens utiles</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
+                                            <li class="mb-2"><a href="freelance.html" class="text-light text-decoration-none">Freelance</a></li>
+                                            <li class="mb-2"><a href="tarifs.html" class="text-light text-decoration-none">Tarifs</a></li>
+                                            <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <h5 class="text-warning">Ressources</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="freelance.html"  class="text-light text-decoration-none">Guide Freelance</a></li>
+                                            <li><a href="about.html"  class="text-light text-decoration-none">FAQ</a></li>
+                                            <li><a href="contact.html"  class="text-light text-decoration-none">Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <h5 class="text-warning">Contact</h5>
+                                        <p><i class=" bi bi-envelope-fill"></i>Email : contact@afritalent.com</p>
+                                        <p><i class="bi bi-telephone-fill"></i>Tél : +221 78 427 72 29</p>
+                                        <p> <i class="bi bi-geo-alt-fill"></i></i>Dakar,Sénégal</p>
+                                    </div>
+                                     </div>
+                                    <hr class="border-secondary">
+                                    <div class="text-center">
+                                        
+                                        <p class="mb-0">&copy;AfriTalent. Tous les droits réservés.</p>
+                                    </div>
+                                    </div>
+                            </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
