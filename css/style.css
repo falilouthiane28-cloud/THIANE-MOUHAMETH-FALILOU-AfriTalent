@@ -34,6 +34,21 @@ h2,
 h3 {
     font-family: 'Sora' sans-serif;
 }
+
+/* NAVBAR */
+
+.navbar{
+    transition: all 0.3s ease;
+padding: 15px 5%;
+background-color: var(--primary);
+}
+.navbar.scrolled{
+    background-color: rgba(225,225,225, 0.97);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 8px 5%;
+    backdrop-filter: blur(10px);
+    transition: all  0.3s ease;
+}
 /* HERO SECTIONS */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/bg-2.png");
@@ -293,10 +308,10 @@ h3 {
     font-weight: 500;
 }
 
-.filters .active {
+/* .filters .active {
     background-color: var(--primary);
     color: #111;
-}
+} */
 /* SECTION CARTE FREELANCE */
 .sec-carte {
     background-color: var(--quatery);
@@ -696,7 +711,35 @@ form {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
 }
 
+/* BUTTON TOP */
 
+#back-to-top{
+    display: flex;
+   position: fixed;
+bottom: 30px;
+right: 30px;
+width: 45px;
+height: 50px;
+border: 1px solid var(--tertiary);
+border-radius: 50%;
+background: var(--tertiary);
+color: #ffff;
+font-size: 2rem;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+opacity: 0;
+
+}
+
+#back-to-top.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#back-to-top i{
+    color: #000;
+}
 
 
 
@@ -732,6 +775,15 @@ form {
     .navbar {
         padding: 10px 4%;
     }
+/*     
+    BUTTON MODE JOURS/NUITS */
+
+    #theme-toggle{
+        padding: 6px 10px;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 100%;
+    }
 
     /* HERO */
     .hero {
@@ -749,7 +801,7 @@ form {
 
     .hero h2 {
         font-size: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 8rem;
     }
 
     .hero-btn {
@@ -1373,3 +1425,58 @@ align-items: center;
         font-size: 0.85rem;
     }
 }
+
+/* BUTTON MODE JOURS/NUITS */
+
+body.dark-mode{
+    background-color: #121212;
+    color: var(--primary);
+}
+
+
+body.dark-mode .navbar{
+    background-color: #121212;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+body.dark-mode .nav-link{
+    color: var(--primary);
+}
+body.dark-mode  .comment,
+body.dark-mode  .categorie,
+body.dark-mode  .sec-carte,
+body.dark-mode  .tarifs,
+body.dark-mode  .team,
+body.dark-mode  .stats
+{
+    background-color: #121212;
+    color: var(--primary);
+
+}
+body.dark-mode  .filters{
+background-color:#121212;
+color: blue;
+}
+body.dark-mode  .filters button {
+    color: var(--quatery);
+}
+
+body.dark-mode  .card-team,
+body.dark-mode  .card-tarifs,
+body.dark-mode  .card-po {
+    background-color: #1e1e1e;
+    border-color: #6C4FDF;
+    color: var(--primary);
+}
+body.dark-mode  .categorie{
+    color: var(--primary);
+}
+
+
+body.dark-mode  .contact-info{
+    color: #000;
+}
+body.dark-mode  .form-label{
+    color: #000;
+}
+
+
