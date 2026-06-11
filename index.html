@@ -19,7 +19,7 @@
 <body>
    
           <header>
-    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top ">
+    <nav class="navbar navbar-expand-lg  fixed-top ">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="image/Tech_business_purple_logo-removebg-preview.png" alt="logo" width="200px" height="auto">
@@ -37,6 +37,10 @@
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                       <li class="nav-item ms-3 text-center">  <button id="theme-toggle" class="btn btn-outline-dark btn-sm">
+                            🌙  
+                        </button></li>
+                       
                         <li class="nav-itiem ms-3">
                             <a href="index.html" class="btn btn-light">Rejoindre AfriTalent</a>
                         </li>
@@ -63,24 +67,24 @@
                 <div class="hero-stats"> 
                 <div >
                     <div class="icon-hero"><i class="fa-solid fa-arrows-down-to-people"></i></div>
-                    <h3>+2,200</h3>
+                    <h3 class="counter" data-target="2200">+0</h3>
                     <span>Freelance</span>
                 </div>
                 <div >
                     <div class="icon-hero" ><i class="fa-regular fa-building"></i></div>
-                    <h3>+700</h3>
+                    <h3 class="counter" data-target="800">+0</h3>
                     <span>Entreprises</span>
                 </div>
                 <div >
                     <div class="icon-hero"><i class="fa-solid fa-briefcase"></i></div>
-                    <h3>+12,000</h3>
+                    <h3 class="counter" data-target="12000">+0</h3>
                     <span>Mission Realise</span>
                 </div>
 
             </div>
         </section>
        
-            <section class="comment">
+            <section class="comment fade-in">
                 <div class="container-text-step">
                     <h2 class="title-cm">Comment ca marche</h2>
                     <div class="bento-grid">
@@ -116,45 +120,45 @@
                     </div>
             </section>
             
-                <section class="categorie">
+                <section class="categorie fade-in ">
                     <h2 class="categorie-titre">Explore les catégories</h2>
                     <div class="categorie-grid">
                         <div class="category-card">
                             <div class="icon-ct"><img src="image/developpement-web.png" alt="" width="100px"></div>
-                            <h3>Développement Web </h3>
-                            <p>+1500 Freelance</p>
+                            <h3>Développe ment Web </h3>
+                            <p class="counter" data-target="1500">+0 Freelance</p>
                         </div>
 
                         <div class="category-card">
                             <div class="icon-ct"><img src="image/conception-graphique.png" alt="" width="100px"></div>
                             <h3>Desing UI/UX </h3>
-                            <p>+500 Freelance</p>
+                            <p class="counter" data-target="500">+0 Freelance</p>
                         </div>
                         <div class="category-card">
                             <div class="icon-ct"><img src="image/digital-marketing (1).png" alt=""width="100px"></div>
                             <h3>Marketing Digital</h3>
-                            <p>+800 Freelance</p>
+                            <p class="counter" data-target="800">+0 Freelance</p>
                         </div>
                         <div class="category-card">
                             <div class="icon-ct"><img src="image/ia.png" alt="" width="100px"></div>
                             <h3>Data & IA</h3>
-                            <p>+400 Freelance</p>
+                            <p class="counter" data-target="400">+0 Freelance</p>
                         </div>
                         <div class="category-card">
                             <div class="icon-ct"><img src="image/redaction-de-contenu.png" alt="" width="100px"></div>
                             <h3>Rédaction Tech</h3>
-                            <p>+300 Freelance</p>
+                            <p class="counter" data-target="300">+0 Freelance</p>
                         </div>
                     
                     <div class="category-card">
                         <div class="icon-ct"><img src="image/serveur-cloud.png" alt="" width="100px"></div>
                         <h3>DévOps & Cloud</h3>
-                        <p>+800 Freelance</p>
+                        <p class="counter" data-target="800">+0 Freelance</p>
                     </div>
                      </div>
                 </section>
               
-                    <section class="testimonials  py-1  bg-dark text-light">
+                    <section class="testimonials fade-in py-1  bg-dark text-light">
                         <div class="container">  
                         <h2 class="text-center mb-5 text-light">Ils nous font confiance</h2>
 
@@ -238,7 +242,7 @@ type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
                                     
                     </section>
                    
-                        <section class="cta">
+                        <section class="cta fade-in">
                             <div class="cta-content">
                                 <h2>Rejoins la plateforme qui connecte les talents africains</h2>
                                 <a href="contact.html" class="cta-btn">S'inscrire maintenant</a>
@@ -262,7 +266,7 @@ type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
                                         <a href="" class="text-light"><i class="fa-brands fa-linkedin fa-1x"></i></a>
                                         <a href="" class="text-light" ><i class="fa-brands fa-square-instagram fa-1x"></i></a>
                                         <a href="" class="text-light"><i class="fa-brands fa-facebook fa-1x"></i></a>
-                                        <a href="" class="text-light"> <i class="fa-brands fa-x-twitter fa-1x"></i></a>
+                                        <a href="https://x.com/afrisolutionsUK?s=20" class="text-light"> <i class="fa-brands fa-x-twitter fa-1x"></i></a>
 
                                     </div>
                                     </div>
@@ -291,12 +295,17 @@ type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
                                         <p>📍</i>Dakar,Sénégal</p>
                                     </div>
                                      </div>
+                                     <button id="back-to-top">
+  
+   &#8679;
+</button>
                                     <hr class="border-secondary">
                                     <div class="text-center">
                                         
                                         <p class="mb-0">&copy;AfriTalent. Tous les droits réservés.</p>
                                     </div>
                                     </div>
+
                             </footer>                     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

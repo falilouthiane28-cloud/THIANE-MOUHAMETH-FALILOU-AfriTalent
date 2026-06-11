@@ -46,3 +46,47 @@ if (backToTop){
     );
 };
 
+
+
+// COMPTEURS ANIMES
+
+const counters = document.querySelectorAll('.counter');
+const countObserver = new IntersectionObserver((entries) =>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            const target = entry.target;
+            const finalValue = parseInt(target.dataset.target);
+            let current = 0;
+            const increment = finalValue / 100;
+           
+            const timer = setInterval( () => {
+                current += increment;
+                if (current >= finalValue){ 
+           
+                current = finalValue;
+                clearInterval(timer);
+            }
+            target.textContent = '+' + Math.floor(current);
+        }, 20);
+        countObserver.unobserve(target);
+    }
+});
+ });
+ counters.forEach(counter => countObserver.observe(counter));
+
+
+
+//  FADE-IN AU SCROLL
+
+
+ const fadeElements = document.querySelectorAll('.fade-in');
+ if (fadeElements.length > 0) {
+    const fade0bserver = new IntersectionObserver((entries)=>{
+        entries.forEach((entry) => {
+        if (entry.isIntersecting){entry.target.classList.add('visible');
+            fade0bserver.unobserve(entry.target);
+        }
+    });
+ }, { threshold: 0.15});
+ fadeElements.forEach((el) => fade0bserver.observe(el)); 
+}

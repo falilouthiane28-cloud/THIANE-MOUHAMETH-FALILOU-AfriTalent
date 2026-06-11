@@ -86,7 +86,7 @@ background-color: var(--primary);
     color: var(--quatery);
     gap: 50px;
     text-decoration: none;
-    border: 1px solid #ffff;
+    border: none;
 
 }
 
@@ -97,11 +97,15 @@ background-color: var(--primary);
 #btn-hero1,
 #btn-hero2 {
     padding: 20px 10px;
+    border-radius: 20px;
 }
 
 #btn-hero1 {
     background-color: var(--tertiary);
     margin-right: 35px;
+}
+#btn-hero2{
+    background-color: var(--tertiary);
 }
 
 
@@ -200,7 +204,11 @@ background-color: var(--primary);
     padding: 100px;
     background: var(--tertiary);
 }
-
+.counter{
+    color: var(--tertiary);
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
 .categorie-titre {
     text-align: center;
     font-size: 2.5rem;
@@ -1238,7 +1246,7 @@ align-items: center;
         max-width: 100%;
         padding: 20px 20px;
     }
-
+   
     .card-tarifs h3 {
         font-size: 1rem;
     }
@@ -1479,4 +1487,12 @@ body.dark-mode  .form-label{
     color: #000;
 }
 
-
+.fade-in{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+} 
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

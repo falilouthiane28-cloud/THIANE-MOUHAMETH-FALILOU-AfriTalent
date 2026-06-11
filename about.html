@@ -21,10 +21,10 @@
 
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg  fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="image/Tech business purple logo.PNG" alt="logo" width="200px" height="auto">
+                <img src="image/Tech_business_purple_logo-removebg-preview.png" alt="logo" width="200px" height="auto">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
@@ -39,6 +39,9 @@
                     <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <button id="theme-toggle" class="btn btn-outline-light">
+                            🌙  
+                        </button>
                     <li class="nav-itiem ms-3">
                         <a href="index.html" class="btn btn-light">Rejoindre AfriTalent</a>
                     </li>
@@ -48,7 +51,7 @@
     </nav>
 </header>
 <main>
-    <section class="notre-histoire">
+    <section class="notre-histoire fade-in">
         <div class="about-container">
             <div class="about-text">  
             <h2 >Notre Histoire</h2>
@@ -62,7 +65,7 @@
             <img src="image/bg-3.png" alt="">
         </div>
     </section>
-    <section class="team">
+    <section class="team fade-in">
         <h2>Notre Team</h2>
         <p class="team-text">les talents qui font evoluer AfriTalent</p>
         <div class="team-container"> 
@@ -116,7 +119,7 @@
                     </div>
                    
     </section>
-    <section class="valeurs">
+    <section class="valeurs fade-in">
         <h2>Nos valeurs</h2>
         <div class="container-text"> 
         <div>
@@ -144,29 +147,29 @@
         </div>
     </section>
     
-        <section class="stats">
+        <section class="stats fade-in">
             <div class="container">  
             <h2 class="tt-stats">Nos Stats</h2>
             <div class="grid-stats"> 
 
             <div class="card-stats">
               <div class="icon-hero"><i class="fa-solid fa-arrows-down-to-people"></i></div>
-                <h3>+0</h3>
+                <h3 class="counter" data-target="1000">+0</h3>
                 <p>Freelance actifs</p>
             </div>
 <div class="card-stats">
     <div class="icon-hero" ><i class="fa-regular fa-building"></i></div>
-                <h3>+0</h3>
+                <h3 class="counter" data-target="700">+0</h3>
                 <p>Entreprises patenaires</p>
             </div >
             <div class="card-stats"> 
                 <div class="icon-hero"><i class="fa-solid fa-briefcase"></i></div>
-                <h3>+0</h3>
-                <p>Mission réalisées</p>
+                <h3 class="counter" data-target="12000">+0</h3>
+                <p>Mission réalisées</p>    
             </div>
             <div class="card-st"> 
                 <div> <i class="fa-regular fa-percent"></i></div>
-                <h3>+0</h3>
+                <h3 class="counter" data-target="98">+0</h3>
                 <p>% de satisfactions client</p>
             </div>
              </div>
@@ -217,6 +220,9 @@
                                         <p>📧Email : contact@afritalent.com</p>
                                         <p>📞Tél : +221 78 427 72 29</p>
                                         <p>📍</i>Dakar,Sénégal</p>
+                                        <button id="back-to-top">
+    &#8679;
+</button>
                                     </div>
                                      </div>
                                     <hr class="border-secondary">
@@ -226,6 +232,7 @@
                                     </div>
                                     </div>
                             </footer> 
+ 
      
 
 
