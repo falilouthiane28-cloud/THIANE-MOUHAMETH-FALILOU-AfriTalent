@@ -90,3 +90,73 @@ const countObserver = new IntersectionObserver((entries) =>{
  }, { threshold: 0.15});
  fadeElements.forEach((el) => fade0bserver.observe(el)); 
 }
+
+// FILTRAGE DES FREELANCES 
+const filterBtns = document.querySelectorAll('.filter-btn');
+const freelancerCards = document.querySelectorAll(' .freelancer-card');
+filterBtns.forEach( btn => {
+    btn.addEventListener('click', () =>{
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filterValue = btn.dataset.filter;
+        freelancerCards.forEach(card => {
+            const category = card.dataset.category;
+            if (filterValue=== 'all' || category ===filterValue) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        }); 
+    });
+} );
+
+
+//VALIDATIONS JS
+const form = document.getElementById('contactform');
+
+form.addEventListener('submit',function (e){
+    e.preventDefault();
+
+const nom = document.getElementById('nom');
+const prenom = document.getElementById('prenom');
+const email = document.getElementById('email');
+const sujet = document.getElementById('sujet');
+const message = document.getElementById('message');
+const errors = form.querySelectorAll('.error, .error-message');
+errors.forEach(error=> error.textContent='');
+let isValid =true;
+
+    if(nom.value.trim() === ''){
+        nom.nextElementSibling.textContent= 'le nom est obligatoire ';
+        isValid = false ;
+    }
+   if(prenom.value.trim() === ''){
+        prenom.nextElementSibling.textContent= 'le prenom est obligatoire ';
+        isValid = false ;
+    } 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email.value.trim() === ''){
+        email.nextElementSibling.textContent= 'email est requi ';
+        isValid = false ;
+    } else if (!emailRegex.test(email.value.trim())){
+      email.nextElementSibling.textContent= 'email invalide ';
+        isValid = false ;  
+    }
+    if(sujet.value === ''){
+        sujet.nextElementSibling.textContent= 'veuillez choisir un sujet ';
+        isValid = false ;
+    }
+    if(message.value.trim() ===''){
+        message.nextElementSibling.textContent= 'le message est requis  ';
+        isValid = false ;
+    } else if (message.value.trim().length <20){
+        message.nextElementSibling.textContent= 'le message est requis  ';
+        isValid = false ;
+    }
+    if (isValid) {
+        alert('votre message a été envoyer avec success');
+        form.reset();
+    }
+
+});
