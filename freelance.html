@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html lang="en">
-
+ <!-- LINK DU SITE -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+       <!-- NAVBAR BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg  fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="image/Tech business purple logo.PNG" alt="logo" width="200px" height="auto">
+                    <img src="image/Tech_business_purple_logo-removebg-preview.png" alt="logo" width="200px" height="auto">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
@@ -39,8 +40,11 @@
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                         <button id="theme-toggle" class="btn btn-outline-light">
+                            🌙  
+                        </button>
                         <li class="nav-itiem ms-3">
-                            <a href="index.html" class="btn btn-light">Rejoindre AfriTalent</a>
+                            <a href="contact.html" class="btn btn-light">Rejoindre AfriTalent</a>
                         </li>
                     </ul>
                 </div>
@@ -48,25 +52,26 @@
         </nav>
     </header>
     <main> 
+      <!-- SECTION FILTRE -->
         <section class="filters">
             <div>
-                <button class="active">Tous</button>
-                <button>Développement webs</button>
-                <button>Desing UI/UX</button>
-                <button>Marketing Digital</button>
-                <button> Data & IA</button>
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="dev">Développement webs</button>
+                <button class="filter-btn" data-filter="design">Desing UI/UX</button>
+                <button class="filter-btn" data-filter="marketing">Marketing Digital</button>
+                <button class="filter-btn" data-filter="ia"> Data & IA</button>
             </div>
            
          
         </section>
-       
+       <!-- SECTION CARTE FREELANCE -->
             <section class="py-5 bg- sec-carte">
                 <div class="container"> 
                 <h2 class="text-center text-primary mb-5">NOS FREELANCE</h2>
                 <div class="row g-4">
-                    <div class="col-md-4"> 
-                        <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil M (1).jpg"  class="card-img-top "  alt="">
+                    <div class="col-md-4 freelancer-card" data-category="dev"> 
+                        <div class="card bg-black text-light border-0 h-100"  > 
+                    <img src="image/profil M (1).jpg"  class="card-img-top " height="300"  alt="dev web">
                     <div class="card-body">  
                     <h5 class="card-title text-warning">Amadou diop</h5>
                     <p class="mb-1">Développeur Web</p>
@@ -84,9 +89,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-4">
-                     <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil f (1).jpg"  class="card-img-top"  alt="" height="450px">
+                <div class="col-md-4 freelancer-card" data-category="design">
+                     <div class="card bg-black text-light border-0 h-100" > 
+                    <img src="image/profil f (1).jpg"  class="card-img-top"  alt="fatou Designer" height="300px">
                      <div class="card-body"> 
                     <h5 class="card-title text-warning">Fatou Ndiaye</h5>
                     <p class="mb-1">Designer UI/UX</p>
@@ -104,9 +109,9 @@
                     </div>
                 </div>
                  </div>
-                <div class="col-md-4">
-                    <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/mk.jpg" class="card-img-top"  alt="" height="450px" width="auto">
+                <div class="col-md-4 freelancer-card" data-category="marketing">
+                    <div class="card bg-black text-light border-0 h-100"  > 
+                    <img src="image/mk.jpg" class="card-img-top"  alt="Mouhamed marketing" height="300px" width="auto">
                     <div class="card-body"> 
                     <h5 class="card-title text-warning">Mouhamed Ba</h5>
                     <p class="mb-1">Marketing Digital</p>
@@ -124,9 +129,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil f9.jpg" class="card-img-top"  alt=""   width="auto" height="372">
+                <div class="col-md-4 freelancer-card" data-category="ia">
+                    <div class="card bg-black text-light border-0 h-100" > 
+                    <img src="image/profil f9.jpg" class="card-img-top"  alt="awa data"   width="auto" height="300px">
                     <div class="card-body"> 
                     <h5 class="card-title text-warning">Awa thiane</h5>
                     <p class="mb-1">Data Analyst</p>
@@ -145,9 +150,9 @@
                 </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil M (5).jpg" class="card-img-top" alt="">
+                <div class="col-md-4 freelancer-card" data-category="dev">
+                    <div class="card bg-black text-light border-0 h-100" > 
+                    <img src="image/profil M (5).jpg" class="card-img-top" alt="diatta dev" height="300px">
                     <div class="card-body"> 
                     <h5 class="card-title text-warning">Ibrahima Diatta</h5>
                     <p class="mb-1">Développeur Backend</p>
@@ -165,9 +170,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 freelancer-card" data-category="marketing">
                     <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil F (4).jpg" class="card-img-top" alt="" height="370px" width="auto">
+                    <img src="image/profil final.jpg" class="card-img-top" alt="khady tech" height="300px" width="auto">
                     <div class="card-body"> 
                     <h5 class="card-title text-warning">Khady diop</h5>
                     <p class="mb-1">Rédactrice Tech</p>
@@ -185,9 +190,9 @@
                     </div>
                 </div>
                  </div>
-                <div class="col-md-4">
-                    <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/Professional picture_.jpg" class="card-img-top" alt="" height="469px" width="auto">
+                <div class="col-md-4 freelancer-card" data-category="dev">
+                    <div class="card bg-black text-light border-0 h-100" > 
+                    <img src="image/profil dev.jpg" class="card-img-top" alt=" Ndiaye" height="320px" >
                      <div class="card-body"> 
                     <h5 class="card-title text-warning">Ousmane Ndiaye</h5>
                     <p class="mb-1">DevOps</p>
@@ -205,9 +210,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil f 10.jpg" class="card-img-top" alt="">
+                <div class="col-md-4 freelancer-card" data-category="design">
+                    <div class="card bg-black text-light border-0 h-100"  > 
+                    <img src="image/profil f 10.jpg" class="card-img-top" alt="fall Graphiste" height="300px">
                     <div class="card-body"> 
                     <h5 class="card-title text-warning">Maman Fall</h5>
                     <p class="mb-1">Graphiste</p>
@@ -225,9 +230,9 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card bg-black text-light border-0 h-100"> 
-                    <img src="image/profil M (3).jpg" class="card-img-top" alt="">
+                <div class="col-md-4 freelancer-card" data-category="dev">
+                    <div class="card bg-black text-light border-0 h-100" > 
+                    <img src="image/profil M (3).jpg" class="card-img-top" alt="tall dev" height="300px">
                     <div class="card-body"> 
                     <h5 class="card-title text-warning">Cheikh Tall</h5>
                     <p class="mb-1">Développeur Mobile</p>
@@ -250,59 +255,89 @@
             </section> 
             </main>
                 <br>
-                            <footer class="bg-dark text-light pt-3 pb-3">
-                                <div class="footer-container">
-                                    <div class="row *"> 
-                                        <div class="col-md-3 " >  
-                                            <div class="d-flex align-items-center gap-3 mb-4">  
-                                            <a href="index.html" class="d-flex align-items-center gap-2">
-                                                <img src="image/Tech_business_purple_logo-removebg-preview.png" alt="" width="150px" height="auto">
-                                            </a>
-                                            </div>
-                                   
-                                    <p>
-                                        Plateforme qui connecte les freelance et les entreprises du monde entier
-                                    </p>
-                                    <div class="d-flex align-items-center gap-3 mt-4">
-                                        <a href="" class="text-light"><i class="fa-brands fa-linkedin fa-1x"></i></a>
-                                        <a href="" class="text-light" ><i class="fa-brands fa-square-instagram fa-1x"></i></a>
-                                        <a href="" class="text-light"><i class="fa-brands fa-facebook fa-1x"></i></a>
-                                        <a href="" class="text-light"> <i class="fa-brands fa-x-twitter fa-1x"></i></a>
-
-                                    </div>
-                                    </div>
-                                    
-                                    <div class="col-md-3 ">
-                                        <h5 class="text-warning">Liens utiles</h5>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
-                                            <li class="mb-2"><a href="freelance.html" class="text-light text-decoration-none">Freelance</a></li>
-                                            <li class="mb-2"><a href="tarifs.html" class="text-light text-decoration-none">Tarifs</a></li>
-                                            <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3 ">
-                                        <h5 class="text-warning">Ressources</h5>
-                                        <ul class="list-unstyled">
-                                            <li><a href="freelance.html"  class="text-light text-decoration-none">Guide Freelance</a></li>
-                                            <li><a href="about.html"  class="text-light text-decoration-none">FAQ</a></li>
-                                            <li><a href="contact.html"  class="text-light text-decoration-none">Support</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3 mb-4">
-                                        <h5 class="text-warning">Contact</h5>
-                                        <p>📧Email : contact@afritalent.com</p>
-                                        <p>📞Tél : +221 78 427 72 29</p>
-                                        <p>📍</i>Dakar,Sénégal</p>
-                                    </div>
-                                     </div>
-                                    <hr class="border-secondary">
-                                    <div class="text-center">
-                                        
-                                        <p class="mb-0">&copy;AfriTalent. Tous les droits réservés.</p>
-                                    </div>
-                                    </div>
-                            </footer> 
+                               <!-- === FOOTER === -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="image/logo.jpeg"
+                alt="Logo AfriTalent"
+                height="80"
+              />
+            </a>
+            <p class="footer-desc">
+              La plateforme qui connecte les talents africains aux meilleures
+              opportunités de carriére.
+            </p>
+            <div class="mt-3 d-flex gap-2">
+              <a
+                href="https://www.facebook.com/share/17ggmD27HW/?mibextid=wwXIfr"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://x.com/africalens?s=21"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/afritalents?igsh=ZDV4eW44YXp2NHZ6"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/afritalents-nexus/"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6 class="footer-title">Liens utiles</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="freelances.html">Trouver un freelance</a></li>
+              <li><a href="tarifs.html">Tarifs & abonnements</a></li>
+              <li><a href="about.html">À propos de nous</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6 class="footer-title">Ressources</h6>
+            <ul class="footer-links">
+              <li><a href="#">Blog AfriTalent</a></li>
+              <li><a href="#">Guide du freelancing</a></li>
+              <li><a href="#">Centre d'aide (FAQ)</a></li>
+              <li><a href="#">Conditions générales</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h6 class="footer-title">Contact</h6>
+            <ul class="footer-links">
+              <li><a href="#">📧 contact@afritalent.com</a></li>
+              <li><a href="#">📞 +221 78 427 72 29</a></li>
+              <li><a href="#">📍 Dakar, Sénégal</a></li>
+            </ul>
+            <button id="back-to-top">
+    &#8679
+</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year"></span> AfriTalent. Tous droits réservés.</span>
+        </div>
+      </div>
+    </footer>
 
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

@@ -113,7 +113,7 @@ filterBtns.forEach( btn => {
 
 //VALIDATIONS JS
 const form = document.getElementById('contactform');
-
+if (form){ 
 form.addEventListener('submit',function (e){
     e.preventDefault();
 
@@ -160,3 +160,4 @@ let isValid =true;
     }
 
 });
+}
