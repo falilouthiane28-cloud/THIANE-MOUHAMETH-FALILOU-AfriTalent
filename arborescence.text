@@ -1,0 +1,65 @@
+Structure du dossier pour le volume Windows-SSD
+Le numéro de série du volume est 0000002A 76A3:9A3A
+C:.
+¦   .gitignore
+¦   about.html
+¦   arborescence.text
+¦   contact.html
+¦   freelance.html
+¦   index.html
+¦   readme.md
+¦   tarifs.html
+¦   
++---css
+¦       style.css
+¦       
++---docs
+¦       THIANE_MOUHAMETH-FALILOU_Presentation.pptx
+¦       
++---image
+¦       98ee45f03bf93e562e95656edccc9faa.jpg
+¦       Accounting services Dubai, UAE.jpg
+¦       AfriTalent.png
+¦       Assistant Comptable.jpg
+¦       bg-2.png
+¦       bg-3.png
+¦       bg-cta.jpg
+¦       bg-site.jpg
+¦       conception-graphique.png
+¦       developpement-web.png
+¦       digital-marketing (1).png
+¦       h-t2.png
+¦       ia.png
+¦       logo.jpeg
+¦       mk.jpg
+¦       narcos.jpg
+¦       Professional picture_.jpg
+¦       profil dev.jpg
+¦       profil f (1).jpg
+¦       profil f (2).jpg
+¦       profil f (3).jpg
+¦       profil F (4).jpg
+¦       profil F (5).jpg
+¦       profil f 10.jpg
+¦       profil f 2.0.jpg
+¦       profil F.jpg
+¦       profil f9.jpg
+¦       profil final.jpg
+¦       profil M (1).jpg
+¦       profil M (2).jpg
+¦       profil M (3).jpg
+¦       profil M (4).jpg
+¦       profil M (5).jpg
+¦       profil M (6).jpg
+¦       profil m 2.0 2.jpg
+¦       profil m 2.0.jpg
+¦       redaction-de-contenu.png
+¦       serveur-cloud.png
+¦       Tech business purple logo.PNG
+¦       Tech_business_purple_logo-removebg-preview.png
+¦       télécharger (9).jpg
+¦       What Are the Benefits of Hiring a Local React Native Developer in Zambia_.jpg
+¦       
++---js
+        main.js
+        
